@@ -36,6 +36,8 @@ vim.keymap.set("n", "<F3>", "<cmd>set spell!<CR>", { silent = true });
 
 vim.keymap.set("n", "<leader>cl", "<cmd>g/^$/d<CR>");
 
--- Yarn jest test commands
+-- Jest test commands
 vim.keymap.set("n", "<leader>rtu", "<cmd>!npm run test %<CR>");
 vim.keymap.set("n", "<leader>rte", "<cmd>!npm run test:e2e %<CR>");
+
+vim.keymap.set("n", "<leader>tt", "<cmd>!npx playwright test %<CR>");
